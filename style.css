@@ -40,6 +40,7 @@
 html,
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 section {
   padding: 40px var(--padding-leftRight);
@@ -96,6 +97,18 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-background);
+  animation-duration: 5s;
+  animation-name: slide-down;
+}
+@keyframes slide-down {
+  from {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  to {
+    max-height: 1000px;
+  }
 }
 input {
   display: none;
@@ -268,7 +281,38 @@ button,
   height: var(--testimonials-pic-height);
   object-fit: cover;
 }
+
+.animation-slide-right {
+  animation-duration: 4s;
+  animation-name: slide-right;
+  animation-play-state: paused;
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.animation-slide-left {
+  animation-duration: 4s;
+  animation-name: slide-left;
+  animation-play-state: paused;
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .testimonials-card {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
