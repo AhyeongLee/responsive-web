@@ -6,27 +6,37 @@
     <title>Responsive Web</title>
     <script src="https://kit.fontawesome.com/7ced5dd5a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
 </head>
 <body>
     <nav class="nav">
-        <span class="logo">LOGO</span>
-        <span class="nav__menu">
-            <ul class="menu__items">
-                <li class="menu__item">About</li>
-                <li class="menu__item">Portfolio</li>
-                <li class="menu__item">Blog</li>
-                <li class="menu__item">Contact</li>
+        <div class="nav__main">
+            <span class="logo">LOGO</span>
+            <span class="nav__menu">
+                <ul class="menu__items">
+                    <li class="menu__item">About</li>
+                    <li class="menu__item">Portfolio</li>
+                    <li class="menu__item">Blog</li>
+                    <li class="menu__item">Contact</li>
+                </ul>
+            </span>
+            <span class="nav__input">
+                <input type="text" placeholder="Search" />
+                <i class="fas fa-search"></i>
+            </span>
+            <button class="nav__menu-s">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav__menu-show">
+            <ul class="menu__items-show">
+                <li class="menu__item-show">About</li>
+                <li class="menu__item-show">Portfolio</li>
+                <li class="menu__item-show">Blog</li>
+                <li class="menu__item-show">Contact</li>
             </ul>
-        </span>
-        <span class="nav__input">
-            <input type="text" placeholder="Search" />
-            <i class="fas fa-search"></i>
-        </span>
-        <button class="nav__menu-s">
-            <i class="fas fa-bars"></i>
-        </button>
+        </div>
     </nav>
     <header class="header">
         <div class="header__left">
@@ -150,22 +160,50 @@
             </div>
         <div class="row">
             <article>
-                <img class="crew-pic" src="./images/crew1.jpeg" alt="crew1"/>
+                <div class="crew-pic-container">
+                    <ul class="crew__snss">
+                        <li class="crew__sns"><i class="fab fa-facebook-f"></i></li>
+                        <li class="crew__sns"><i class="fab fa-twitter"></i></li>
+                        <li class="crew__sns"><i class="fab fa-instagram-square"></i></li>
+                    </ul>
+                    <img class="crew-pic" src="./images/crew1.jpeg" alt="crew1"/>
+                </div>
                 <h3>Monica Bottger</h3>
                 <h5>information</h5>
             </article>
             <article>
-                <img class="crew-pic" src="./images/crew2.jpeg" alt="crew2"/>
+                <div class="crew-pic-container">
+                    <ul class="crew__snss">
+                        <li class="crew__sns"><i class="fab fa-facebook-f"></i></li>
+                        <li class="crew__sns"><i class="fab fa-twitter"></i></li>
+                        <li class="crew__sns"><i class="fab fa-instagram-square"></i></li>
+                    </ul>
+                    <img class="crew-pic" src="./images/crew2.jpeg" alt="crew2"/>
+                </div>
                 <h3>Monica Bottger</h3>
                 <h5>information</h5>
             </article>
             <article>
-                <img class="crew-pic" src="./images/crew3.jpeg" alt="crew3"/>
+                <div class="crew-pic-container">
+                    <ul class="crew__snss">
+                        <li class="crew__sns"><i class="fab fa-facebook-f"></i></li>
+                        <li class="crew__sns"><i class="fab fa-twitter"></i></li>
+                        <li class="crew__sns"><i class="fab fa-instagram-square"></i></li>
+                    </ul>
+                    <img class="crew-pic" src="./images/crew3.jpeg" alt="crew3"/>
+                </div>
                 <h3>Monica Bottger</h3>
                 <h5>information</h5>
             </article>
             <article>
-                <img class="crew-pic" src="./images/crew4.jpeg" alt="crew4"/>
+                <div class="crew-pic-container">
+                    <ul class="crew__snss">
+                        <li class="crew__sns"><i class="fab fa-facebook-f"></i></li>
+                        <li class="crew__sns"><i class="fab fa-twitter"></i></li>
+                        <li class="crew__sns"><i class="fab fa-instagram-square"></i></li>
+                    </ul>
+                    <img class="crew-pic" src="./images/crew4.jpeg" alt="crew4"/>
+                </div>
                 <h3>Monica Bottger</h3>
                 <h5>information</h5>
             </article>
@@ -177,12 +215,12 @@
                 <h2 class="article__title">Testimonials</h2>
                 <p>Qekdjs  dkkfsd rjekwej dkw ek gssdf  dkfls dkkfsd rjekwej dkw ek gssdf wd fefff d selkdjf ekfjsle fd.</p>
             </div>
-            <div class="testimonials row">
+            <div class="testimonials row row-1">
                 <div class="testimonials-container">
                 <img class="testimonials-pic" src="./images/crew1.jpeg" alt="testimonials1"/>
                     <div class="testimonials-card card-left">
                         <div class="card-content">
-                            <h5>information kdjs  dkkfsd rjekwej dkw ek gs kdjs  dkkfsd rjekwej dkw ek gs</h5>
+                            <h5>informatio sd rjekwej dkw ek gs kdjs  dkkfsd rjekwej dkw ek gs</h5>
                             <div>
                                 <h4>Monica Bottger</h4>
                                 <h6>information</h6>
@@ -194,7 +232,7 @@
                     <img class="testimonials-pic" src="./images/crew2.jpeg" alt="testimonials2"/>
                     <div class="testimonials-card card-left">
                         <div class="card-content">
-                            <h5>information kdjs  dkkfsd rjekwej dkw ek gs kdjs  dkkfsd rjekwej dkw ek gs</h5>
+                            <h5>information kdjs  dkkfsd rjekwej dkwdkkfsd rjekwej dkw ek gs</h5>
                             <div>
                                 <h4>Monica Bottger</h4>
                                 <h6>information</h6>
@@ -203,11 +241,11 @@
                     </div>
                 </div>
             </div>
-            <div class="testimonials row">
+            <div class="testimonials row row-2">
                 <div class="testimonials-container">
                     <div class="testimonials-card card-right">
                         <div class="card-content">
-                            <h5>information kdjs  dkkfsd rjekwej dkw ek gs kdjs  dkkfsd rjekwej dkw ek gs</h5>
+                            <h5>information kdjs  dkkfsd rjekwjs  dkkfsd rjekwej dkw ek gs</h5>
                             <div>
                                 <h4>Monica Bottger</h4>
                                 <h6>information</h6>
@@ -219,7 +257,7 @@
                 <div class="testimonials-container">
                     <div class="testimonials-card card-right">
                         <div class="card-content">
-                            <h5>information kdjs  dkkfsd rjekwej dkw ek gs kdjs  dkkfsd rjekwej dkw ek gs</h5>
+                            <h5>information kdjs ek gs kdjs  dkkfsd rjekwej dkw ek gs</h5>
                             <div>
                                 <h4>Monica Bottger</h4>
                                 <h6>information</h6>
